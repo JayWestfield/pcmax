@@ -46,16 +46,16 @@ fn main() {
     // --------------CALCULATING BOUNDS--------------
 
     let bounds: Vec<Box<dyn Bound>> = vec![
-        Box::new(pigeon_hole::PigeonHole {}),
-        Box::new(max_job_size::MaxJobSize {}),
-        Box::new(middle::MiddleJobs {}),
+        // Box::new(pigeon_hole::PigeonHole {}),
+        // Box::new(max_job_size::MaxJobSize {}),
+        // Box::new(middle::MiddleJobs {}),
         //Box::new(fs::FeketeSchepers {}),
         Box::new(lpt::LPT {}),
-        Box::new(lptp::Lptp {}),
-        Box::new(sss_bound_tightening::SSSBoundStrengthening {}),
+        // Box::new(lptp::Lptp {}),
+        // Box::new(sss_bound_tightening::SSSBoundStrengthening {}),
         // Box::new(lptpp::Lptpp {}),
-        Box::new(lifting::Lifting::new_deterministic(4)),
-        Box::new(mss::MSS::new_deterministic(1)),
+        // Box::new(lifting::Lifting::new_deterministic(4)),
+        // Box::new(mss::MSS::new_deterministic(1)),
     ];
 
     let total_timeout = Timeout::new(total_timeout_time);
