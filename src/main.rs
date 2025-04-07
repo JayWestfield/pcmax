@@ -46,9 +46,9 @@ fn main() {
     // --------------CALCULATING BOUNDS--------------
 
     let bounds: Vec<Box<dyn Bound>> = vec![
-        // Box::new(pigeon_hole::PigeonHole {}),
-        // Box::new(max_job_size::MaxJobSize {}),
-        // Box::new(middle::MiddleJobs {}),
+        Box::new(pigeon_hole::PigeonHole {}),
+        Box::new(max_job_size::MaxJobSize {}),
+        Box::new(middle::MiddleJobs {}),
         //Box::new(fs::FeketeSchepers {}),
         Box::new(lpt::LPT {}),
         // Box::new(lptp::Lptp {}),
